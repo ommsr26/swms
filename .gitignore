@@ -1,0 +1,60 @@
+# ==========================================
+# SWMS Monorepo Git Ignore
+# ==========================================
+
+# --- .NET Build & Visual Studio ---
+**/bin/
+**/obj/
+.vs/
+*.user
+*.userosscache
+*.suo
+*.userprefs
+*.sln.docstates
+*.DotSettings.user
+*.pidb
+*.ide/
+_ReSharper*/
+
+# --- Node / Frontend ---
+**/node_modules/
+**/dist/
+**/dist-ssr/
+**/.vite/
+**/.cache/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.pnpm-store/
+
+# --- Environment & Local Secrets ---
+# Keep .env.example tracked; keep project configs that colleagues need
+swstp/.env.local
+swstp/.env.*.local
+*.pem
+*.key
+*.crt
+
+# --- Runtime Uploads & Test Evidence ---
+# Keep structure and documentation, ignore uploaded payload image files
+backend/**/evidence/sessionimages/*
+!backend/**/evidence/sessionimages/.gitkeep
+!backend/**/evidence/README.md
+
+# --- Workspace & Scratch Files ---
+Solid Waste/
+bin/
+deploy/
+MotionDetection/
+PCB/
+scratch_*.ps1
+process_truck_assets.py
+.svn/
+**/.git_backup/
+
+# --- OS & Editor Files ---
+.DS_Store
+Thumbs.db
+*.swp
+*.swo

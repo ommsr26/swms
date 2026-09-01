@@ -1,0 +1,8 @@
+<Solution>
+  <Folder Name="/backend/">
+    <Project Path="backend/SWSTP.Telemetry.Backend/SWSTP.Telemetry.Backend.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/SWSTP.Telemetry.Backend.Tests/SWSTP.Telemetry.Backend.Tests.csproj" />
+  </Folder>
+</Solution>

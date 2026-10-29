@@ -1,4 +1,4 @@
-sudo lsof /dev/serial0 /dev/ttyAMA0 /dev/ttyS0
-sudo fuser -v /dev/serial0
-ls -l /dev/serial0
-systemctl status gpsd gpsd.socket ModemManager serial-getty@ttyAMA0 serial-getty@ttyS0 --no-pager
+ps -o pid,ppid,args -p 20635,20636,20637
+ls /etc/ppp/peers/
+grep -rn "serial0\|ttyS0\|/dev/tty" /etc/ppp/peers/
+systemctl list-units --all | grep -iE "ppp|lte|modem"

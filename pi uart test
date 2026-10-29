@@ -1,4 +1,2 @@
-ps -o pid,ppid,args -p 20635,20636,20637
-ls /etc/ppp/peers/
-grep -rn "serial0\|ttyS0\|/dev/tty" /etc/ppp/peers/
-systemctl list-units --all | grep -iE "ppp|lte|modem"
+sudo poff -a 2>/dev/null; sudo pkill pppd
+python test_m10s.py
